@@ -1,0 +1,775 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/*Video de fondo*/
+.video-1{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.video-1 video{
+  z-index: 1;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.head{
+  background: rgba(228, 228, 228, 0);
+  z-index: 999;
+  position: relative;
+}
+
+.head-1{
+display: flex;
+justify-content: center;
+}
+
+.nav{
+  position: absolute;
+  z-index: 999;
+
+}
+
+.nav-2{
+position: absolute;
+display: none;
+opacity: 0;
+}
+
+.logo{
+  max-width: 13rem;
+}
+
+
+
+.nav-list{
+  display: flex;
+  list-style-type: none;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.nav-list-2{
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+}
+
+.abrir-menu{
+  display: none;
+}
+
+
+.cerrar-menu{
+  display: none;
+}
+
+.abrir-menu{
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+}
+
+.cerrar-menu{
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background: rgba(255, 255, 255, 0);;
+}
+
+.cerrar-menu img, .cerrar-menu img{
+  width: 2rem;
+}
+
+.btn-img{
+  z-index: 999;
+  width: 2rem;
+}
+
+/*Logo centrado*/
+header .fav{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vh;
+  z-index: 998;
+}
+
+.logo-res{
+width: clamp(10rem, 3vw, 15rem);
+position: relative;
+display: none;
+}
+
+.equ{
+z-index: 999;
+display: flex;
+padding:  1rem;
+align-items: center;
+justify-content: space-between;
+}
+
+
+/*Card Principal*/
+.prin{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+grid-template-rows: 1fr;
+gap: .5rem;
+margin: 7rem 0;
+}
+
+.prin-1{
+border: 1px solid;
+}
+
+.prin-txt{
+background: rgb(0, 0, 128);
+}
+
+.prin-txt h1{
+text-align: center;
+font-size: clamp(4rem, 5vw, 5rem);
+padding: 2rem;
+color: rgb(255, 255, 255);
+}
+
+.prin-txt p{
+line-height: 2rem;
+text-align: center;
+padding: .5rem 1rem 2rem;
+font-size: clamp(1.5rem, 3.5vw, 1.8rem);
+color: white;
+}
+
+.prin-img{
+position: relative;
+}
+
+.prin-img img{
+width: 100%;
+}
+
+.prin-img-1{
+position: relative;
+}
+
+.prin-img-1 img{
+width: 100%;
+}
+
+/*
+.prin-img{
+background: url(fotos/asesorai.JPG);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}*/
+/*
+.prin-img-1{
+background: url(fotos/asesoria-2.JPG);
+background-position: top center;
+background-repeat: no-repeat;
+background-size: cover;
+}*/
+
+/*Cards Servicios*/
+.general{
+position: relative;
+margin: 10rem 0rem;
+}
+
+
+.equip{
+padding-left:2rem;
+}
+
+.equip h1{
+font-size: clamp(4rem, 6vw, 6rem);
+color: rgb(0, 0, 128);
+}
+
+.equip small{
+font-size:clamp(1.5rem, 2rem, 3rem) ;
+color: rgb(0, 0, 0);
+}
+
+
+.container{
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: 20rem;
+grid-template-rows: 32.5rem;
+gap: 1.5rem;
+margin: 1rem 0px 1rem 0px;
+padding: 2rem 0px 1rem 5.2rem;
+overflow-x: auto;
+overscroll-behavior-x: center;
+scroll-padding: 1rem;
+}
+
+.snaps-inline{
+scroll-snap-type: inline proximity;
+scrollbar-width: none;
+}
+
+.snaps-inline > * {
+scroll-snap-align: center;
+}
+
+.leftArrow{
+width: 70px;
+height: 70px;
+border-radius: 40%;
+border: none;
+background: rgba(145, 143, 143, 0.308);
+position: absolute;
+top: 55%;
+z-index: 1;
+left: 30px;
+font-size: 25px;
+color: white;
+transition: .2s;
+display: none;
+}
+
+.leftArrow:hover, .rightArrow:hover{
+scale: 1.04;
+background: rgba(145, 143, 143, 0.575);;
+}
+
+.rightArrow{
+width: 70px;
+height: 70px;
+display: none;
+border-radius: 40%;
+background: rgba(145, 143, 143, 0.329);
+position: absolute;
+border: none;
+top: 55%;
+z-index: 1;
+right: 30px;
+font-size: 25px;
+color: white;
+transition: .2s;
+}
+
+.card, .card2, .card3, .card4{
+border-radius: 1.5rem;
+box-shadow: 0.4px 0.7px 6px rgb(0, 0, 128);
+}
+
+
+.card{
+background: url(/fotos/asesorai.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+text-decoration: none;
+position: relative;
+}
+
+
+.card h2{
+font-size:clamp(3rem, 4vw, 4.5rem);
+text-decoration: none;
+position: relative;
+top: 50%;
+color: white;
+padding: 0rem 1rem 0;
+}
+
+.card p{
+font-size:clamp(1.2rem, 1.5vw, 3rem);
+position: relative;
+top: 50%;
+color: white;
+padding: 0rem 1.4rem;
+}
+
+.card2{
+background: url(fotos/sistema.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+text-decoration: none;
+}
+
+.card2 h3{
+color: white;
+font-size:clamp(3rem, 5vw + 1rem, 5rem);
+position:relative;
+top: 10%;
+padding: 1rem;
+}
+
+.card2 p{
+color: white;
+font-size:clamp(1.2rem, 1.5vw, 3rem);
+position: relative;
+top: 10%;
+padding:0rem 1rem;
+}
+
+.card3{
+background: url(img/dron2.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+text-decoration: none;
+}
+
+.card3 h4{
+font-size:clamp(3rem, 5vw + 1rem, 4.5rem);
+padding: .5rem 1rem;
+color: rgb(0, 0, 128);
+text-align: center;
+}
+
+.card3 p{
+text-align: center;
+padding: 0 1.5rem;
+color: rgb(0, 0, 128);
+font-size:clamp(1.2rem, 1.5vw, 3rem);
+}
+
+.card4{
+background: url(img/ases.png);
+background-position: center;
+background-repeat: no-repeat;
+text-decoration:none;
+background-size: cover;
+}
+
+.card4 h5{
+font-size:clamp(3rem, 5vw + 1rem, 4.5rem);
+color: rgb(255, 255, 255);
+position: relative;
+top: 55%;
+text-align: center;
+transform: translateY(-50%);
+padding: 1rem 1rem 0;
+}
+
+.card4 p{
+position: relative;
+top: 55%;
+transform: translateY(-50%);
+color: white;
+text-align: center;
+padding: 1rem;
+font-size:clamp(1.2rem, 1.5vw, 3rem);
+}
+
+/*Mapa*/
+.mapa{
+width: 100%;
+background: rgb(255, 255, 255);
+margin: 3rem 0px 3rem;
+}
+
+.mapa h1{
+text-align: center;
+padding: .5rem 2rem;
+font-size: clamp(4rem, 7vw ,8rem);
+color: rgb(0, 0, 128);
+border: 2px solid rgb(255, 255, 255);
+}
+
+.mapa p{
+text-align: center;
+font-size: clamp(1.5rem, 2vw, 3rem);
+padding-bottom: 22rem;
+padding: 1rem;
+letter-spacing: 5px;
+}
+
+.mapadiv{
+width:82%;
+position: relative;
+top:2rem;
+left: 10%;
+transition: transform .2s; 
+}
+
+.mapadiv path{
+stroke: #000000;
+stroke-width:2px;
+}
+
+.mapadiv .ags{
+fill: rgb(0, 0, 128);
+}
+
+.mapadiv .siu{
+fill: rgba(18, 119, 14, 0);
+}
+
+.mapadiv a :hover{
+fill: rgb(6, 6, 170);
+cursor:default;
+}
+
+footer{
+background: rgb(0, 0, 128);
+height: auto;
+width: 100%;
+font-family: Arial, Helvetica, sans-serif;
+padding-top: 40px;
+color: white;
+}
+
+.footer-content{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+
+.footer-content h3{
+font-size: 45px ;
+font-weight: 400;
+text-transform: capitalize;
+line-height: 3rem;
+}
+
+
+.footer-content p{
+max-width: 500px;
+margin: 10px auto;
+line-height: 28px;
+font-size: 18px;
+}
+
+.socials{
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 1rem 0 3rem 0;
+font-size: 18px;
+}
+
+.socials li{
+margin: 0 40px;
+}
+
+.socials a{
+text-decoration: none;
+color: white;
+}
+
+.footer-bottom{
+background: rgb(2, 2, 79);
+width: 100%;
+padding: 20px 0;
+text-align: center;
+}
+
+.footer-bottom p{
+font-size: 14px;
+word-spacing: 2px;
+text-transform: capitalize;
+}
+
+
+.socials a{
+text-decoration: none;
+}
+
+/*Responsive dos cards*/
+@media screen and (width >= 650px) and (width <= 1800px) {
+
+
+.prin{
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 36rem);
+}
+
+.prin-img, .prin-img-1{
+  background-position: left;
+}
+
+.prin-img img{
+  display: none;
+}
+
+.prin-img-1 img{
+  display: none;
+}
+
+.prin-img{
+  background: url(fotos/osva.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.prin-img-1{
+  background: url(img/WhatsApp\ Image\ 2023-02-01\ at\ 5.03.22\ PM.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
+
+
+/*Responsive 4 cards*/
+@media screen and (width >= 1061px) {
+.prin{
+  grid-template-columns: 30%  19% 19% 30%;
+  grid-template-rows: 1fr;
+}
+
+.prin-img img{
+  display: none;
+}
+
+.prin-img-1 img{
+  display: none;
+}
+
+
+.prin-txt h1{
+  text-align: left;
+}
+
+.prin-txt p{
+  text-align: left;
+  padding: 1rem 2.7rem;
+  line-height: 2.5rem;
+}
+
+.prin-img{
+  background: url(/fotos/osva.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.prin-img-1{
+  background: url(/fotos/osva.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
+
+/*Responsive Cards Servicios*/
+@media screen and (min-width:992px) {
+
+
+.general h1{
+      color: rgb(0, 0, 128);
+      padding: 0 0 0 4rem;
+}
+
+.general small{
+  padding: 0 0 0 8rem;
+  margin: 0 0 0 0;
+  color: rgb(0, 0, 0);
+}
+
+  .container{
+    grid-auto-columns:30rem;
+    grid-template-rows:40rem;
+    margin: 0;
+  }
+
+ .card, .card2, .card3, .card4{ 
+    transition: .4s ease-in-out;
+}
+
+.card:hover, .card2:hover, .card3:hover, .card4:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 20px rgb(0, 0, 128);
+}
+
+.leftArrow, .rightArrow{
+    display: block;
+}
+
+}
+
+
+/*Responsive Menu*/
+@media screen and (width <= 1061px){
+
+
+  .logo-res{
+    display: block;
+  }
+
+  .intro-p{
+      line-height: 2.3rem;
+  }
+
+  .abrir-menu,.cerrar-menu{
+    display: block;
+  }
+
+  .abrir-menu{
+      position: relative;
+      
+  }
+
+  .nav{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+
+  .nav-2{
+  display: none;
+    opacity:0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1.6rem 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .2);
+    z-index: 999;
+    background: rgb(255, 255, 255);
+    height: 100vh;
+    visibility: hidden;
+  }
+
+  .logo{
+      position: relative;
+      left: -3rem;
+      display: none;
+  }
+
+  .nav-2.visible{
+    opacity: 20;
+    visibility: visible;
+    background: rgb(0, 0, 128);
+    height: 100vh;
+    z-index: 1;
+  }
+
+  .nav-list-2{
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+    position: relative;
+  }
+
+  .nav-list-2 li a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .mapadiv{
+      width: 100%;
+      left: -10px;
+  }
+}
+
+
+
+
+
+.pie-pagina{
+  margin-top: 10rem;
+  width: 100%;
+  background: rgb(0, 0, 128);
+}
+
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+  width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+  color: white;
+  margin-bottom: 25px;
+  font-size: 2.5rem;
+}
+
+.pie-pagina .grupo-1 .box p{
+  color: white;
+  margin-bottom: .8rem;
+}
+
+
+.pie-pagina .grupo-1 .red-social{
+  display: flex;
+  flex-direction: column;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+  text-decoration: none;
+  color: white;
+  margin-left: 0;
+}
+
+.pie-pagina .grupo-2{
+  background: rgb(1, 1, 59);
+  padding: 1rem .7rem;
+  text-align: center;
+  color: white;
+} 
+
+.pie-pagina .grupo-2 small{
+  font-size: 1rem;
+}
+
+@media screen and (max-width:800px){
+  .pie-pagina .grupo-1{
+     grid-template-columns: 1fr;
+  }
+
+}

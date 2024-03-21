@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+}
+
+.conteiner-1{
+    border: .1rem solid;
+}
+
+.conteiner-fre{
+    background: url(fotos/fres.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: .4s ease-in-out;
+}
+
+.conteiner-fre h1, .conteiner-cal h1, .conteiner-sis h1, .conteiner-lor h1{
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    color: white;
+    background: rgba(151, 151, 151, 0.555);
+    text-decoration: none;
+}
+
+.conteiner-fre a, .conteiner-cal a {
+    text-decoration: none;     
+}
+
+.conteiner-cal{
+    background: url(fotos/calera.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.conteiner-sis{
+    background: url(fotos/sistemaRiego.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteiner-lor{
+    background: url(fotos/lor.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width:1000px) {
+    .conteiner{
+        grid-template-columns: 1fr;
+    }
+
+    .conteiner-cal h1, .conteiner-fre h1, .conteiner-lor h1, .conteiner-sis h1{
+        font-size: 2rem;
+    }
+}
