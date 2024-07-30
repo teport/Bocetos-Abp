@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+.intro{
+    background-color: rgb(0, 0, 127);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.intro-1{
+    background-image: url(img-opt/tecnologia-agropecuaria.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.intro-2{
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.intro-2 h1{
+    font-size: 2.8rem;
+    color: rgb(0, 0, 128);
+    padding: 1rem 0;
+    font-weight: 700;
+}
+
+.intro-2 p{
+    padding: 1rem 0 1.5rem;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+}
+
+.intro-2 button{
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 0, 128);
+    color: white;
+}
+
+.olas{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    margin: 3rem 0 0;
+}
+
+.olas-txt{
+
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.olas-txt h1{
+    color: rgb(0, 0, 128);
+    font-size: 2.8rem;
+}
+
+.olas-txt p{
+    font-size: 1.2rem;
+    padding: 1.5rem 1rem 2rem;
+}
+
+.olas-seccion{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.olas-seccion img{
+    width: 20%;
+}
+
+.olas-seccion h2{
+    color: rgb(0, 0, 128);
+}
+
+section .imagen-ola{
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    bottom: 1px;
+    top: 50%;
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range:entry 0% cover 30%;
+}
+
+
+@keyframes animate {
+    0%{
+        right   : 100%;
+    }
+
+    100%{
+        right: 0;
+    }
+}
+
+@keyframes reveal{
+    from {
+      opacity: 0;
+      translate: 0px 10px;
+      scale: .5;
+    }
+  
+    to{
+      opacity: 1;       
+      translate: 0 0;
+      scale: 1;
+    }
+  }
