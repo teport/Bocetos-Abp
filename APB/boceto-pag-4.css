@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.big {
+    width: 100%;
+    height: 115vh;
+    background-image: url(img/fondo-azul-2.png);
+    position: relative;
+}
+
+.big .logo {
+    width: 12%;
+    margin: 2.5rem 4.2rem;
+}
+
+.big h1 {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.big-sec {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 31rem;
+    margin: 2rem 3rem;
+    gap: 2rem;
+    z-index: 999;
+    position: relative;
+}
+
+.big-sec-img-1{
+    background-image: url(img/herbicidas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 80%;
+    position: relative;
+}
+
+.big-sec-img-1 h2{
+    position: absolute;
+    bottom: 0;
+    margin: 2rem;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.big-sec-img-2{
+    background-image: url(img/insecticidas.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 80%;
+    position: relative;
+}
+
+.big-sec-img-2 h2{
+    position: absolute;
+    bottom: 0;
+    margin: 2rem;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.big-sec-img-3 {
+    background-image: url(img/fericidas.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 80%;
+    position: relative;
+}
+
+.big-sec-img-3 h2{
+    position: absolute;
+    bottom: 0;
+    margin: 2rem;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.big-sec-txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.big-sec-txt p{
+    width: 70%;
+    padding: .5rem 1rem;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.big-sec-txt a{
+    border: none;
+    width: 21%;
+    padding: 1rem;
+    display: block;
+    border-radius: 50px;
+    height: 10%;
+    background-color: #0049AD;
+    color: white;
+}
+
+.big-sec-txt button{
+    border: none;
+    background-color: rgba(245, 245, 220, 0);
+    color: white;
+    
+}
+
+.olas{
+    position: absolute;
+    bottom: 0;
+    height: 60%;
+    width: 100%;
+    z-index: 888;
+}

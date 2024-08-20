@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.principal{
+    width: 100%;
+    height: 115vh;
+    background-image: url(img/calera.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.principal .logo {
+    width: 12%;
+    margin: 2.5rem 4.2rem;
+}
+
+.principal h1 {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+}
+
+.prin{
+    position: relative;
+    margin: 7.5rem 6rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 19rem;
+    gap: 2rem;
+    z-index: 999;
+}
+
+
+.prin-1{
+    border-radius: 15px;
+    background-color: rgba(48, 48, 48, 0.575);
+    backdrop-filter: blur(2px);
+}
+
+.prin-2{
+    border-radius: 15px;
+    background-color: rgba(48, 48, 48, 0.575);
+    backdrop-filter: blur(2px);
+}
+
+.prin-3{
+    border-radius: 15px;
+    background-color: rgba(48, 48, 48, 0.575);
+    backdrop-filter: blur(2px);
+}
+
+.star{
+    margin: 1.5rem;
+}
+
+.star-txt {
+    color: white;
+    margin: 0 1.5rem;
+}
+
+.star-txt h2{
+    position: absolute;
+    bottom: 5px;
+    padding: 2rem 0;
+}
+
+.star-txt p{
+    line-height: 1.3;
+}
+.olas{
+    position: absolute;
+    bottom: 0;
+    height: 60%;
+    width: 100%;
+    z-index: 888;
+}
+
+
+footer{
+    width: 100%;
+    height: 125vh;
+    background-color: black;
+    position: relative;
+    z-index: 999;
+}
+
+footer .logo{
+    width: 12%;
+    margin: 2.5rem 4.2rem;
+}
+
+footer h3{
+    position: absolute;
+    color: white;
+    top: 5rem;
+    left: 15rem;
+    font-size: 1.5rem;
+}
+
+.footer-content{
+    color: white;
+    background-image: url(img/fondooooooooooooooooooooooooooo.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 5rem;
+    border-radius: 15px;
+    height: 30rem;
+    z-index: 999;
+    position: relative;
+}
+
+.footer-content-txt{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.footer-content-txt h4{
+    font-size: 3.8rem;
+    font-weight: 400;
+    padding-bottom: .5rem;
+}
+
+.footer-footer{
+    margin: 2rem 0;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 999;
+}
+
+.olas{
+    position: absolute;
+    bottom: 0;
+    height: 60%;
+    width: 100%;
+    z-index: 2;
+}

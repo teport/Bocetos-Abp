@@ -1,0 +1,91 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ 
+
+header{
+    position: relative;
+    height: 115vh;
+    width: 100%;
+}
+
+header video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+header .olas{
+    position: absolute;
+    bottom: 0;
+    height: 60%;
+    width: 100%;
+    z-index: 999;
+}
+
+header button{
+    position: absolute;
+    z-index: 999;
+    padding: 1.2rem 6.5rem;
+    border-radius: 50px;
+    border: none;
+    color: rgb(0, 0, 128);
+    font-weight: 600;
+    font-size: 1.3rem;
+    right: 0;
+    margin: 1.7rem 3.2rem;
+}
+
+header .capa{
+    position: absolute;
+    width: 100%;
+    height: 115vh;
+    background-color: rgba(97, 97, 187, 0.418);
+    z-index: 888;
+}
+
+.logo-txt{
+    position: absolute;
+    z-index: 889;
+    display: flex;
+    align-items: center;
+    width: 45%;
+    margin: 3rem 4rem;
+    justify-content: stretch;
+    gap: 1rem;
+}
+
+.logo-txt img{
+    width: 25%;
+}
+
+.logo-txt h1{ 
+    font-size: 23px;
+    color: white;
+    font-weight: 600;
+}
+
+.center{
+    position: relative;
+    z-index: 999;
+    align-items: center;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 3rem;
+}
+
+.center img{
+    width: 45%;
+}
+
+.center h2{
+    color: white;
+    font-size: 4rem;
+}

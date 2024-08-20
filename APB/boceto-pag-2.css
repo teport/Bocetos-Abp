@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: red;
+    width: 100%;
+    height: 115vh;
+}
+
+.divi{
+    display: grid;
+    grid-template-columns: 29% 71%;
+    grid-template-rows: 100vh;
+    position: relative;
+    
+}
+
+.divi .divi-1{
+    background-color: #269C72;
+    
+}
+
+.divi-1 img{
+    width: 43%;
+    margin: 1.1rem 4.1rem;
+}
+
+.divi-1-txt{
+    margin: 2rem 3.5rem 2rem 3.5rem;
+    color: white;
+    
+}
+
+.divi-1-txt h1{
+    font-size: 3.5rem;
+}
+
+.divi-1-txt p{
+    position: relative;
+    padding: 2rem 0;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    z-index: 999;
+}
+
+.divi .divi-2{
+    background-color: rgb(0, 0, 128);
+}
+
+.divi-2-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4rem 3.4rem; 
+    grid-template-rows: 25rem;
+    gap: 2.3rem;
+}
+
+.divi-2-grid a{
+    border-radius: 20px;
+}
+
+.divi-2-1{
+    position: relative;
+    background-image: url(img/Persona-cultivando.webp);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .2s;
+}
+
+
+.divi-2-2{
+    position: relative;
+    background-image: url(img/ags.JPG);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divi-2-3{
+    position: relative;
+    background-image: url(img/asesorai.JPG);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divi-2-grid a h2{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    margin: 1rem;
+}
+
+.divi-2-grid a p{
+    position: absolute;
+    bottom: -13rem;
+    line-height: 30px;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    margin: 1rem;
+    z-index: 55;
+}
+
+.olas{
+    position: absolute;
+    bottom: -6rem;
+    height: 60%;
+    width: 100%;
+    z-index: 1;
+}

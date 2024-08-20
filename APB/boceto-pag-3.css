@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    height: 115vh;
+    width: 100%;
+    position: relative;
+}
+
+.serv-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 20rem;
+    margin: 6.5rem 3rem;
+    gap: 4rem 1rem;
+    z-index: 999;
+    position: relative;
+}
+
+.serv-grid-txt:first-child{
+    grid-column: 1/5;
+    text-align: center;
+}
+
+.serv-grid-txt h1{
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.serv-grid-1{
+    border-radius: 10px;
+    background-image: url(img/sistema-rie.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: 1.1s;
+}
+
+.serv-grid-1:hover, .serv-grid-2:hover, .serv-grid-3:hover, .serv-grid-4:hover{
+    scale: 1.04;
+}
+
+.serv-grid-1 h2{
+    position: absolute;
+    bottom: 0;
+    color:white;
+    padding:2rem;
+}
+
+.serv-grid-2{
+    position: relative;
+    border-radius: 10px;
+    background-image: url(img/hoja.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1.1s;
+}
+
+.serv-grid-2 h2{
+    position: absolute;
+    bottom: 0;
+    color:white;
+    padding:2rem;
+}
+
+.serv-grid-3{
+    position: relative;
+    border-radius: 10px;
+    background-image: url(img/hojas-2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1.1s;
+}
+
+.serv-grid-3 h2{
+    position: absolute;
+    bottom: 0;
+    color:white;
+    padding:2rem;
+}
+
+.serv-grid-4{
+    position: relative;
+    border-radius: 10px;
+    background-image: url(img/hoja-3.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1.1s;
+}
+
+.serv-grid-4 h2{
+    position: absolute;
+    bottom: 0;
+    color:white;
+    padding:2rem;
+}
+
+ .olas{
+    position: absolute;
+    bottom: 0;
+    height: 60%;
+    width: 100%;
+    z-index: 888;
+}
