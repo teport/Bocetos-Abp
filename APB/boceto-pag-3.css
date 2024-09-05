@@ -110,3 +110,29 @@ section{
     width: 100%;
     z-index: 888;
 }
+
+.whats img{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 5.5%;
+    bottom: 0;
+    right: 0;
+    margin: 3.5rem;
+    position: absolute;
+    z-index: 900;
+    animation: anima 1s ease-in-out infinite forwards;    
+}
+
+@keyframes anima {
+    0%{
+        scale: 1;
+    }
+
+    50%{
+        scale: 1.05;
+    }
+
+    100%{
+        scale: 1;
+    }
+}
