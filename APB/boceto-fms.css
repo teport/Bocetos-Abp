@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    position: relative;
+    height: 135vh;
+}
+
+header{
+    position: relative;
+    text-align: center;
+}
+
+header .logo{
+    width: 18%;
+}
+
+header p{
+    width: 50%;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+.body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 2rem 1rem;
+    position: relative;
+}
+
+.body-1{
+    display: grid;
+    grid-template-rows: 70% 30%;
+    height: 25rem;
+    border-radius: 15px;
+    z-index: 999;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.body-txt{
+    border-radius: 0px 0px 15px 15px;
+    background-color: rgba(219, 219, 219, 0.493);
+    backdrop-filter: blur(15px);
+}
+
+.body-txt h1{
+    color: rgb(0, 0, 128);
+    font-weight: 550;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.body-txt small{
+    padding-left: 1rem;
+    font-weight: 600;
+}
+
+
+.body-img-1{
+    background-image: url(img/producto-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.body-img-2{
+    background-image: url(img/producto-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.body-img-3{
+    background-image: url(img/producto-3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.body-img-4{
+    background-image: url(img/producto-4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+.olas{
+    position: absolute;
+    z-index: 5;
+    object-fit: cover;
+    width: 100%;
+    bottom: 0;
+}
