@@ -90,3 +90,51 @@ header .capa{
     color: white;
     font-size: 4rem;
 }
+
+
+
+
+
+
+.modal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Mantiene el modal en una posición fija */
+    z-index: 1; /* Asegura que el modal esté sobre otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 100%; /* Ocupa todo el alto de la pantalla */
+    overflow: auto; /* Permite el desplazamiento si el contenido es grande */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro y semitransparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Centra el modal verticalmente */
+    padding: 20px;
+    width: 80%; /* Ancho del modal */
+    max-width: 600px; /* Ancho máximo del modal */
+    height: 50%;
+    max-height: 600px;
+    border-radius: 15px;
+    background-image: url(img/Persona-cultivando.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999;
+}
+
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 999;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
