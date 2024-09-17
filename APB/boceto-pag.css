@@ -95,27 +95,27 @@ header .capa{
 
 
 .modal {
-    display: none; /* Oculta el modal por defecto */
-    position: fixed; /* Mantiene el modal en una posición fija */
-    z-index: 999; /* Asegura que el modal esté sobre otros elementos */
+    display: none; 
+    position: fixed; 
+    z-index: 999; 
     left: 0;
     top: 0;
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    height: 100%; /* Ocupa todo el alto de la pantalla */
-    overflow: auto; /* Permite el desplazamiento si el contenido es grande */
-    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro y semitransparente */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4)
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto; /* Centra el modal verticalmente */
+    margin: 5% auto; 
     padding: 20px;
-    width: 80%; /* Ancho del modal */
-    max-width: 600px; /* Ancho máximo del modal */
+    width: 80%; 
+    max-width: 600px; 
     height: 80%;
     max-height: 600px;
     border-radius: 15px;
-    background-image: url(img/irri.png);
+    background-image: url(img/irri.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
