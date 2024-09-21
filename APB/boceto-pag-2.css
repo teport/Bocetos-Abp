@@ -112,3 +112,83 @@
 .principal-2-3-img:hover{
     scale: 1.04;
 }
+
+
+.modal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Mantiene el modal en una posición fija */
+    z-index: 999; /* Asegura que el modal esté sobre otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 100%; /* Ocupa todo el alto de la pantalla */
+    overflow: auto; /* Permite el desplazamiento si el contenido es grande */
+    background-color: rgba(231, 231, 231, 0.4); /* Fondo oscuro y semitransparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 2% auto; /* Centra el modal verticalmente */
+    padding: 20px;
+    width: 60%; /* Ancho del modal */
+    max-width: 700px; /* Ancho máximo del modal */
+    min-width: 650px;
+    height: 80%;
+    /*min-height: 500px;*/
+    max-height: 500px;
+    border-radius: 15px;
+    background-image: url(img/OFERTA.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    position: relative;
+}
+
+.modal-content p{
+    bottom: 0;
+    text-align: center;
+    color: white;
+    position: absolute;
+    padding: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 100;
+    font-size: .6rem;
+}
+
+
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 999;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:450px) and (max-width:720px) {
+    .modal-content{
+        background-size: contain;
+        min-width: 421px;
+        max-height: 500px;
+        height: 299px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .modal-content{
+        min-width: 350px;
+        max-width: 245px;
+        height: 278px;
+    }
+}
+
