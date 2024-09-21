@@ -2,154 +2,288 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.principal{
-    background-image: url(img/calera.JPG);
+.whats{
+    width: 50%;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    border-radius: 50%;
+    width: 15%;
+    bottom: 0;
+    right: 0;
+    margin: 1.5rem;
+    position: fixed;
+    animation: pulse 1.5s linear infinite;
+}
+
+@keyframes pulse {
+    0%{
+        scale: .9;
+    }   
+
+    50%{
+        scale: 1;
+    }
+
+    100%{
+        scale: .9;
+    }
+}
+
+header{
+    height: 100vh;
+    position: relative;
+}
+
+header video{
     width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 128, 0.336);
+}
+
+.header-flex{
+    display: flex;
+    z-index: 999;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 10% 10% 0;
+}
+
+.header-flex img{
+    position: relative;
+    width: 30%;
+    margin-right: 2rem;
+}
+
+.header-flex h1{
+    position: relative;
+    font-size: clamp(1rem, 0.9105rem + 0.4476vw, 1.4rem);
+    color: white;
+    text-align: center;
+}
+
+.header-center{
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 100%;
+}
+
+.header-center h2{
+    font-size: clamp(2.5rem, 2.1643rem + 1.6783vw, 4rem);
+    color: white;
+    font-weight: 500;
+}
+
+.header-center small{
+    font-size: clamp(1.2rem, 0.9091rem + 1.4545vw, 2.5rem);
+    color: white;
+    opacity: .8;
+}
+
+.btn{
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    left: 50%;
+    transform:translatex(-50%);
+    margin: 5rem 0;
+}
+
+.btn button{
+    padding: .8rem;
+    border-radius: 15px;
+    border: none;
+    color: rgba(0, 0, 128);
+    font-weight: 700;
+}
+
+
+.intro {
+    position: relative;
+    background-image: url(img/fondo-vertical.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10rem repeat(3, 18rem);
+    padding: 10% 0;
+    height: auto; /* Ajuste automático en lugar de altura fija */
+}
+
+.intro-txt {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 7.5%;
+    row-gap: 10%;
+}
+
+.intro-txt h3, .intro-txt p {
+    color: white;
+}
+
+.intro-txt h3 {
+    font-size: clamp(1.5rem, 1.0524rem + 2.2378vw, 3.5rem);
+}
+
+.intro-txt p {
+    font-size: clamp(1rem, 0.821rem + 0.8951vw, 1.8rem);
+}
+
+.grid {
+    margin: 5% 10%;
+    border-radius: 15px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+.grid h4 {
+    color: white;
+    margin: 5%;
+    font-weight: 700;
+    bottom: 0;
+    position: absolute;
+}
+
+.grid-txt p {
+    color: white;
+    margin: 5%;
+}
+
+.intro-1, .intro-2, .intro-3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    border-radius: 15px;
+    background-image: url(img/Persona-cultivando.webp);
 }
 
-.logo{
-    width: 40%;
-    margin: 1rem 0rem 0;
+.intro-2{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
+    border-radius: 15px;
+    background-image: url(img/ags.JPG);
+}
+
+.intro-3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+    background-image: url(img/asesorai.JPG);
+}
+
+@media screen and (max-width: 320px) {
+    .intro {
+        padding: 5% 0;
+    }
+}
+
+@media screen and (min-width: 370px) {
+    .intro {
+        padding: 10% 0;
+    }
+}
+
+
+.modal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Mantiene el modal en una posición fija */
+    z-index: 999; /* Asegura que el modal esté sobre otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 100%; /* Ocupa todo el alto de la pantalla */
+    overflow: auto; /* Permite el desplazamiento si el contenido es grande */
+    background-color: rgba(231, 231, 231, 0.4); /* Fondo oscuro y semitransparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 2% auto; /* Centra el modal verticalmente */
+    padding: 20px;
+    width: 60%; /* Ancho del modal */
+    max-width: 700px; /* Ancho máximo del modal */
+    min-width: 650px;
+    height: 80%;
+    /*min-height: 500px;*/
+    max-height: 500px;
+    border-radius: 15px;
+    background-image: url(img/OFERTA.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    position: relative;
+}
+
+.modal-content p{
+    bottom: 0;
+    text-align: center;
+    color: black;
+    position: absolute;
+    padding: 5%;
     left: 50%;
     transform: translateX(-50%);
-}
-
-.principal h1{
-    margin: .5rem 0;
-    text-align: center;
-    color: white;
-    font-weight: 400;
-    font-size: 2rem;
-}
-
-.prin{
-    margin: 1rem .3rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    font-weight: 100;
+    font-size: .6rem;
 }
 
 
-.prin-1, .prin-2, .prin-3{
-    background-color: rgba(29, 29, 29, 0.651);
-    border-radius: 10px;
-    color: white;
-    padding: 1rem;
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 999;
 }
 
-.star{
-    margin: .5rem 0;
-}
-
-.star-txt p{
-    line-height: 1.4;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.star-txt h2{
-    font-size: 1.7rem;
-    position: relative;
-    bottom: 0;
-}
-
-.olas{
-    display: none;
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
-@media screen and (min-width:750px) {
-
-    .principal{
-      
+@media screen and (min-width:450px) and (max-width:720px) {
+    .modal-content{
+        background-size: contain;
+        min-width: 421px;
+        max-height: 500px;
+        height: 299px;
     }
-
-    .principal .logo{
-        width: 25%;
-    }
-
-    .principal h1{
-    font-size: 3rem;
- }   
-
- .prin{
-    grid-template-columns: repeat(2,1fr);
- }
-
- .star-txt p{
-    font-size: 1.3rem;
- }
-
- .prin-3{
-    z-index: 1;
- }
-
- .olas{
-    display: none;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    z-index: 0;
- }
- 
 }
 
-
-@media screen and (min-width:1200px) {
-
-    .principal{
-        height: 115vh;
+@media screen and (max-width:450px) {
+    .modal-content{
+        background-size: contain;
+        min-width: 300px;
+        max-width: 225px;
+        height: 212px;
     }
-    .principal .logo{
-        width: 12%;
-        margin: 2.5rem 4.2rem;
-        left: 0;
-        transform: translateX(0);
-    }
-
-    .principal h1{
-        position: absolute;
-        text-align: center;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 80px;
-        font-size: 3rem;
-        font-weight: 400;
-        color: white;
-    }
-
-    .prin{
-        position: relative;
-        margin: 7.5rem 6rem;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 19rem;
-        gap: 2rem;
-        z-index: 999;
-    }
-
-    .star-txt p{
-        font-size: 1rem;
-    }
-
-    .olas{
-        display: block;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        z-index: 0;
-     }
-
-    .star-txt h2{
-        position: absolute;
-        top: 80%;
-     }
 }
+
