@@ -5,18 +5,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.whats{
-    width: 50%;
-    position: absolute;
-    z-index: 999;
-    background-color: white;
+.whats img {
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
-    width: 15%;
+    max-width: 4rem;
     bottom: 0;
     right: 0;
-    margin: 1.5rem;
+    margin: 2.5rem;
     position: fixed;
-    animation: pulse 1.5s linear infinite;
+    z-index: 900;
+    animation: anima 1s ease-in-out infinite forwards;
 }
 
 @keyframes pulse {
