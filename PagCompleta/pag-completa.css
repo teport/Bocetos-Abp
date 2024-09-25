@@ -172,112 +172,116 @@ header .capa{
 }
 
 
-.principal{
-    width: 100%;
-    height: 115vh;
-    background-image: url(img/fondo-azul.webp);
+.divi{
     display: grid;
     grid-template-columns: 29% 71%;
+    grid-template-rows: 108vh;
     position: relative;
+    background-color: rgb(0, 0, 128);
+    z-index: 998;
+    
 }
 
-.principal .olas{
-    position: absolute;
-    bottom: 0;
-    object-fit: cover;
-    width: 100%;
+.divi .divi-1{
+    background-color: #269c7300;
+    z-index: 999;
+    
 }
 
-.principal-1 img{
+.divi-1 img{
     width: 43%;
     margin: 1.1rem 4.1rem;
+
 }
 
-.principal-1-txt{
-    color: white;
+.divi-1-txt{
     margin: 2rem 3.5rem 2rem 3.5rem;
+    color: white;
+    z-index: 500;
 }
 
-.principal-1-txt h1{
+.divi-1-txt h1{
     font-size: 3.5rem;
+    z-index: 555;
 }
 
-.principal-1-txt p{
+.divi-1-txt p{
     position: relative;
     padding: 2rem 0;
     font-size: 1.8rem;
     line-height: 2.2rem;
-    z-index: 998;
+    z-index: 2;
 }
 
-.principal-2{
+.divi .divi-2{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.divi-2-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 37rem;
-    padding: 3.8rem 3.4rem;
-    gap: 2.5rem;
-    z-index: 998;
+    margin: 2rem 3.4rem; 
+    grid-template-rows: 25rem;
+    gap: 2.3rem;
 }
 
-.principal-2-1,.principal-2-2, .principal-2-3{
-    display: grid;
-    grid-template-rows: 70% 30%;
+.divi-2-grid a{
+    border-radius: 20px;
 }
 
-.principal-2 h1{
+.divi-2-1{
+    position: relative;
+    background-image: url(img/IMG-20240919-WA0004.webp);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999;
+}
+
+
+
+.divi-2-2{
+    position: relative;
+    background-image: url(img/IMG-20240919-WA0002.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999;
+}
+
+.divi-2-3{
+    position: relative;
+    background-image: url(img/IMG-20240919-WA0005.webp);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999;
+}
+
+.divi-2-grid a h2{
     position: absolute;
     bottom: 0;
     color: white;
-    margin: 1rem 0 2rem 1rem;
+    margin: 1rem;
 }
 
-.principal-2 p{
+.divi-2-grid a p{
+    position: absolute;
+    bottom: -13rem;
     line-height: 30px;
     font-size: 1.3rem;
     color: rgb(255, 255, 255);
     margin: 1rem;
+    z-index: 2;
 }
 
-.principal-2-1-img{
-    background-image: url(img/Persona-cultivando.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-    position: relative;
-    transition: .50s ease-in-out;
-}
-
-.principal-2-1-img:hover{
-    scale: 1.04;
-}
-
-.principal-2-2-img{
-    background-image: url(img/ags.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-    position: relative;
-    transition: .50s ease-in-out;
-}
-
-.principal-2-2-img:hover{
-    scale: 1.04;
-}
-
-.principal-2-3-img{
-    background-image: url(img/asesorai.webp);
-    background-size: cover;
-    background-position: center left;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    position: relative;
-    transition: .50s ease-in-out;
-}
-
-.principal-2-3-img:hover{
-    scale: 1.04;
+.olas{
+    position: absolute;
+    bottom: 0rem;
+    height: 80%;
+    width: 100%;
+    z-index: 1;
+    object-fit: cover;
 }
 
 section{
@@ -415,7 +419,7 @@ section{
 .big {
     width: 100%;
     height: 115vh;
-    background-image: url(img/fondo-azul-2.webp);
+    background-color: rgb(0, 0, 128);
     position: relative;
 }
 
@@ -432,6 +436,7 @@ section{
     top: 80px;
     font-size: 3.5rem;
     font-weight: 400;
+    color: white;
 }
 
 .big-sec {
@@ -556,7 +561,7 @@ section{
     margin: 5% 0;
     position: relative;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     background:url(img/evento.webp) no-repeat center/cover;
     position: relative;
     display: flex;
@@ -568,7 +573,7 @@ section{
 .capa{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.418);
+    background-color: rgba(0, 0, 0, 0);
     position: absolute;
     z-index: 1;
 }
@@ -576,7 +581,12 @@ section{
 .evento-txt{
     padding: 1.5rem;
     z-index: 999;
-    position: relative;text-align: center;
+    position: relative;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(10px);
+    margin: 0 4rem;
+    border-radius: 15px;
 }
 
 .evento h1{
