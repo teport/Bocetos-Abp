@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sec-grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2,10rem) 4rem 10rem ; 
+    width: 100%;
+    height: 100vh;
+    padding: 2rem auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.grid{
+    border-radius: 15px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    backdrop-filter: blur(15px);
+}
+
+.grid:nth-child(1){
+    grid-column: 3/6;
+    grid-row: 1/2;
+}
+
+.g-1{
+    background: url(img/fmc-header.png) no-repeat center/cover;
+}
+
+.g-2{
+    display: none;
+    background: url(img/producto-2.png) no-repeat center/cover;
+}
+
+.g-3{
+    background: url(img/producto-3.png)no-repeat center/cover;
+    display: none;
+}
+
+.grid:nth-child(4){
+    grid-column: 3/6;
+    grid-row: 2/4;
+}
+
+.g-4{
+    background: url(img/fmc-pasto.jpg) no-repeat center/cover;
+}
+
+.grid:nth-child(5){
+    grid-column: 6/8;
+    grid-row:1/3;
+}
+
+.g-5{
+    background: url(img/fmc-info.jpg) no-repeat center/cover;
+}
+
+.grid:nth-child(6){
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+
+.g-6{
+    background: url(img/fmc-present.jpg) no-repeat top/cover;
+}
+
+
+.grid:nth-child(7){
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: none;
+}
+
+.g-7{
+    background: url(img/fmc-pasto.jpg) no-repeat center/cover;
+}
+
+.grid:nth-child(8){
+    grid-column: 3/6;
+}
+
+.g-8{
+    background: url(img/footer-fmc.png) no-repeat center/cover;
+}
+
+.grid:nth-child(9){
+    grid-row: 3/5;
+    grid-column: 1/3;
+}
+
+.g-9{
+    background: url(img/fmc-txt.png) no-repeat center/cover;
+    background-color: rgb(223, 0, 0);
+}
+
+.grid:nth-child(10){
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: none;
+}
+
+.g-10{
+    background: url(img/producto-2.png) no-repeat center/cover;
+}
+
+.grid:nth-child(11){
+    grid-column: 6/8;
+    grid-row: 3/5;
+}
+
+.g-11{
+    background: url(img/fmc-rojo.png) no-repeat center/cover;
+}
+
+    
+.grid:nth-child(12){
+    grid-column: 3/6;
+}
+
+.g-12{
+    background: url(img/fondo-azul.png) no-repeat center/cover;
+}
