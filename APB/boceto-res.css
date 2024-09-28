@@ -5,16 +5,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.whats img {
-    background-color: rgb(255, 255, 255);
+.whats{
+    width: 50%;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
     border-radius: 50%;
-    max-width: 4rem;
+    width: 15%;
     bottom: 0;
     right: 0;
     margin: 1.5rem;
     position: fixed;
-    z-index: 900;
-    animation: anima 1s ease-in-out infinite forwards;
+    animation: pulse 1.5s linear infinite;
 }
 
 @keyframes pulse {
@@ -193,6 +195,92 @@ header video{
     background-image: url(img/asesorai.JPG);
 }
 
+
+.servicios{
+    position: relative;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(4,12rem);
+    margin: 10% auto;
+    gap: 1rem;
+    width: 80%;
+    min-width: 70%;
+}
+
+.ser-grid{
+    position: relative;
+    border-radius: 15px;
+}
+
+.ser-grid h2{
+    position: absolute;
+    bottom: 0;
+    margin: 1rem;
+    color: white;
+}
+
+.ser-1{
+    background: url(img/sistema-rie.JPG) no-repeat center/cover;
+}
+
+.ser-2{
+    background: url(img/hoja.jpg) no-repeat center/cover;
+}
+
+.ser-3{
+    background: url(img/asessssss.png) no-repeat center/cover;
+}
+
+.ser-4{
+    background: url(img/dron.png) no-repeat center/cover;
+}
+
+.servicios-header{
+    text-align: center;
+}
+
+.parsela{
+    background: url(img/evento.jpg) no-repeat center/cover;
+    height: 50vh;
+    position: relative;
+    padding: 2rem;
+    margin-bottom: 15rem;
+}
+
+.capa-2{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.39);
+    z-index: 950;
+    padding: 2rem;
+    margin: 0;
+}
+
+.parsela-txt{
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur(15px);
+    margin: auto;
+    width: 80%;
+    height: auto;
+    color: white;
+    z-index: 998;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    padding: 2rem .5rem;
+}
+
+.parsela-txt h1{
+    margin: 0 0 1rem;
+}
+
+
 @media screen and (max-width: 320px) {
     .intro {
         padding: 5% 0;
@@ -269,10 +357,12 @@ header video{
 
 @media screen and (min-width:450px) and (max-width:720px) {
     .modal-content{
-        background-size: contain;
+        background-size: cover;
         min-width: 421px;
         max-height: 500px;
         height: 299px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
@@ -280,7 +370,7 @@ header video{
     .modal-content{
         background-size: contain;
         min-width: 300px;
-        max-width: 225px;
+        max-width: 245px;
         height: 212px;
     }
 }
