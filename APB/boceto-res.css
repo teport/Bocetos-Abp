@@ -242,7 +242,7 @@ header video{
 
 .parsela{
     background: url(img/evento.jpg) no-repeat center/cover;
-    height: 50vh;
+    height: 100vh;
     position: relative;
     padding: 2rem;
     margin-bottom: 15rem;
@@ -278,6 +278,15 @@ header video{
 
 .parsela-txt h1{
     margin: 0 0 1rem;
+}
+
+.parsela-txt button{
+    margin: 1rem 0 0;
+    padding: .5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 0, 128);
+    color: white;
 }
 
 
