@@ -384,7 +384,7 @@ header video{
         min-width: 370px;
         max-width: 300px;
         height: 300px;
-        top: 50%;
+        top: 25%;
         transform: translatey(-50%);
     }
 }
