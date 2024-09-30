@@ -378,7 +378,7 @@ header video{
 }*/
 
 
-@media screen and (min-width:370px) and (max-width:430px){
+@media screen and (min-width:370px) and (max-width:720px){
     .modal-content{
         background-size: cover;
         min-width: 370px;
