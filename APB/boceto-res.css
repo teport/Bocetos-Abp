@@ -208,6 +208,10 @@ header video{
     min-width: 70%;
 }
 
+.servicios-header h1{
+    font-size: clamp(1.5rem, 1.0524rem + 2.2378vw, 3.5rem);
+}
+
 .ser-grid{
     position: relative;
     border-radius: 15px;
@@ -275,6 +279,7 @@ header video{
 
 .parsela-txt h1{
     margin: 0 0 1rem;
+    font-size: clamp(1.5rem, 1.0524rem + 2.2378vw, 3.5rem);
 }
 
 .parsela-txt button{
@@ -286,6 +291,187 @@ header video{
     color: white;
 }
 
+
+.provedores{
+    text-align: center;
+    position: relative;
+}
+
+.provedores h1{
+    color: #269C72;
+    padding: .5rem;
+    font-size: clamp(1.5rem, 1.0524rem + 2.2378vw, 3.5rem); 
+}
+
+@keyframes slide {
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logo-1{
+    overflow: hidden;
+    padding: 0px 0;
+    white-space: nowrap;
+    position: relative;
+    margin: 2rem 0 0;
+    padding-bottom: 3rem;
+  }
+  
+  .logo-1 h1{
+    text-align: center;
+    padding: 3rem 0;
+    color: rgb(0, 0, 128);
+    font-size: clamp(2.4rem, 4vw, 4rem);
+    font-weight: 800;
+  }
+
+.logos-slide{
+    display: inline-block;
+    animation: 25s slide infinite linear;
+    z-index: 998;
+    position: relative;
+  }
+  
+  .logos-slide img{
+    height: 70px;
+    padding: 1rem;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px 0 rgb(153, 153, 153);
+    background-color: white;
+    z-index: 999;
+  }
+
+a{
+    position: relative;
+}
+
+
+.clientes{
+    height: auto;
+    background: url(img/calera.JPG) no-repeat center/cover;
+    padding: 1rem;
+    margin: 10% auto;
+    width: 100%;
+}
+
+.clientes h1{
+    color: white;
+    text-align: center;
+    font-size: clamp(1.5rem, 1.0524rem + 2.2378vw, 3.5rem);
+}
+
+.clientes-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 10% auto;
+    position: relative;
+}
+
+.cli-grid{
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.397);
+    backdrop-filter: blur(5px);
+    color: white;
+    border-radius: 15px;
+    display: grid;
+}
+
+.star{
+    margin: .5rem 0;
+}
+
+.star-tit{
+    margin: 1rem 0;
+}
+
+.star-tit h2{
+    position: relative;
+    bottom: 0;
+
+}
+
+
+footer{
+    /*background:url(img/fondo-nuevo-blancp.webp) no-repeat center/cover;*/
+    padding: 1rem;
+    background-color: black;
+}
+
+.footer-content{
+    background: url(img/fondooooooooooooooooooooooooooo.webp) no-repeat center/cover;
+}
+
+.footer-content{
+    text-align: center;
+    color: white;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: auto;
+    width: 90%;
+}
+
+.footer-foot{
+    color: rgb(255, 255, 255);
+    margin: 10% auto;
+    width: 90%;
+}
+
+.footer-foot ul{
+    list-style: none;
+}
+
+.footer-foot ul li{
+    margin: 1rem 0;
+}
+
+@media screen and (min-width:750px) {
+    .logos-slide img{
+        height: 120px;
+    }
+
+    .logo-1::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 150px;
+        height: 100%;
+        z-index: 2;
+      }
+
+      .logo-1::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 100%;
+        z-index: 2;
+      }
+}
+
+@media screen and (min-width:1250px){
+    .logo-1::after{
+        width: 250px;
+        height: 100%;
+      }
+
+      .logo-1::before{
+        width: 250px;
+        height: 100%;
+      }
+}
 
 @media screen and (max-width: 320px) {
     .intro {
