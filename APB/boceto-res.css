@@ -242,10 +242,10 @@ header video{
 
 .parsela{
     background: url(img/evento.jpg) no-repeat center/cover;
-    height: 100vh;
+    height: auto;
     position: relative;
     padding: 2rem;
-    margin-bottom: 15rem;
+    margin: 3rem 0;
 }
 
 .capa-2{
@@ -264,14 +264,11 @@ header video{
     background-color: rgba(255, 255, 255, 0.37);
     backdrop-filter: blur(15px);
     margin: auto;
-    width: 80%;
+    width: 100%;
     height: auto;
     color: white;
     z-index: 998;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+    position: relative;
     text-align: center;
     padding: 2rem .5rem;
 }
@@ -378,7 +375,7 @@ header video{
 }*/
 
 
-@media screen and (min-width:370px) and (max-width:720px){
+@media screen and (min-width:370px) and (max-width:750px){
     .modal-content{
         background-size: cover;
         min-width: 370px;
