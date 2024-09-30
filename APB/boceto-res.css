@@ -366,7 +366,7 @@ header video{
 }
 
 
-@media screen and (min-width:450px) and (max-width:720px) {
+/*@media screen and (min-width:450px) and (max-width:720px) {
     .modal-content{
         background-size: cover;
         min-width: 421px;
@@ -375,14 +375,28 @@ header video{
         top: 50%;
         transform: translateY(-50%);
     }
+}*/
+
+
+@media screen and (min-width:370px) and (max-width:430px){
+    .modal-content{
+        background-size: cover;
+        min-width: 370px;
+        max-width: 300px;
+        height: 300px;
+        top: 0;
+        transform: translatey(0);
+    }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:360px) {
     .modal-content{
-        background-size: contain;
+        background-size: cover;
         min-width: 300px;
         max-width: 245px;
         height: 212px;
+        top: 0;
+        transform: translatey(0);
     }
 }
 
