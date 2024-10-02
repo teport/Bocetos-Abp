@@ -183,7 +183,7 @@ header video{
     background-size: cover;
     position: relative;
     border-radius: 15px;
-    background-image: url(img/ags.JPG);
+    background-image: url(img/ags.webp);
 }
 
 .intro-3 {
@@ -192,7 +192,7 @@ header video{
     background-size: cover;
     position: relative;
     border-radius: 15px;
-    background-image: url(img/asesorai.JPG);
+    background-image: url(img/asesorai.webp);
 }
 
 
@@ -225,19 +225,19 @@ header video{
 }
 
 .ser-1{
-    background: url(img/sistema-rie.JPG) no-repeat center/cover;
+    background: url(img/sistema-rie.webp) no-repeat center/cover;
 }
 
 .ser-2{
-    background: url(img/hoja.jpg) no-repeat center/cover;
+    background: url(img/hoja.webp) no-repeat center/cover;
 }
 
 .ser-3{
-    background: url(img/asessssss.png) no-repeat center/cover;
+    background: url(img/asessssss.webp) no-repeat center/cover;
 }
 
 .ser-4{
-    background: url(img/dron.png) no-repeat center/cover;
+    background: url(img/dron.webp) no-repeat center/cover;
 }
 
 .servicios-header{
@@ -245,7 +245,7 @@ header video{
 }
 
 .parsela{
-    background: url(img/evento.jpg) no-repeat center/cover;
+    background: url(img/evento.webp) no-repeat center/cover;
     height: auto;
     position: relative;
     padding: 2rem;
@@ -353,7 +353,7 @@ a{
 
 .clientes{
     height: auto;
-    background: url(img/calera.JPG) no-repeat center/cover;
+    background: url(img/calera.webp) no-repeat center/cover;
     padding: 1rem;
     margin: 10% auto;
     width: 100%;
