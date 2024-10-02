@@ -267,8 +267,8 @@ header video{
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.37);
     backdrop-filter: blur(15px);
-    margin: auto;
-    width: 100%;
+    margin: 10% auto;
+    width: 95%;
     height: auto;
     color: white;
     z-index: 998;
@@ -372,6 +372,7 @@ a{
     gap: 1rem;
     margin: 10% auto;
     position: relative;
+    width: 95%;
 }
 
 .cli-grid{
