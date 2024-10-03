@@ -5,13 +5,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    font-size: 16px;
+}
+
 .whats{
-    width: 50%;
+    width: 3em;
     position: absolute;
     z-index: 999;
     background-color: white;
     border-radius: 50%;
-    width: 15%;
     bottom: 0;
     right: 0;
     margin: 1.5rem;
@@ -70,7 +73,7 @@ header video{
 
 .header-flex h1{
     position: relative;
-    font-size: clamp(1rem, 0.9105rem + 0.4476vw, 1.4rem);
+    font-size: 1em;
     color: white;
     text-align: center;
 }
@@ -84,14 +87,18 @@ header video{
     width: 100%;
 }
 
+.logo-center{
+    display: none;
+}
+
 .header-center h2{
-    font-size: clamp(2.5rem, 2.1643rem + 1.6783vw, 4rem);
+    font-size: 2.5em;
     color: white;
     font-weight: 500;
 }
 
 .header-center small{
-    font-size: clamp(1.2rem, 0.9091rem + 1.4545vw, 2.5rem);
+    font-size: 1.2em;
     color: white;
     opacity: .8;
 }
@@ -111,6 +118,7 @@ header video{
     border: none;
     color: rgba(0, 0, 128);
     font-weight: 700;
+    font-size: .8em;
 }
 
 
@@ -118,11 +126,12 @@ header video{
     position: relative;
     background-image: url(img/fondo-nuevo-azul.webp);
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10rem repeat(3, 18rem);
+    grid-template-rows: 10em repeat(3, 18em);
     padding: 10% 0;
     height: auto; /* Ajuste automático en lugar de altura fija */
 }
@@ -140,11 +149,11 @@ header video{
 }
 
 .intro-txt h3 {
-    font-size: clamp(1.5rem, 1.0524rem + 2.2378vw, 3.5rem);
+    font-size: 1.5em;
 }
 
 .intro-txt p {
-    font-size: clamp(1rem, 0.821rem + 0.8951vw, 1.8rem);
+    font-size: 1em;
 }
 
 .grid {
@@ -183,7 +192,7 @@ header video{
     background-size: cover;
     position: relative;
     border-radius: 15px;
-    background-image: url(img/ags.webp);
+    background-image: url(img/ags.JPG);
 }
 
 .intro-3 {
@@ -192,7 +201,7 @@ header video{
     background-size: cover;
     position: relative;
     border-radius: 15px;
-    background-image: url(img/asesorai.webp);
+    background-image: url(img/asesorai.JPG);
 }
 
 
@@ -201,15 +210,17 @@ header video{
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr repeat(4,12rem);
+    grid-template-rows: 1fr repeat(4,12em);
     margin: 10% auto;
-    gap: 1rem;
+    gap: 2rem;
     width: 80%;
     min-width: 70%;
+    background: url(img/fondo-nuevo-blancp.webp) no-repeat center/cover;
+    background-attachment: fixed;
 }
 
 .servicios-header h1{
-    font-size: clamp(1.5rem, 1.0524rem + 2.2378vw, 3.5rem);
+    font-size: 1.5em;
 }
 
 .ser-grid{
@@ -222,22 +233,23 @@ header video{
     bottom: 0;
     margin: 1rem;
     color: white;
+    font-size: 1.2em;
 }
 
 .ser-1{
-    background: url(img/sistema-rie.webp) no-repeat center/cover;
+    background: url(img/sistema-rie.JPG) no-repeat center/cover;
 }
 
 .ser-2{
-    background: url(img/hoja.webp) no-repeat center/cover;
+    background: url(img/hoja.jpg) no-repeat center/cover;
 }
 
 .ser-3{
-    background: url(img/asessssss.webp) no-repeat center/cover;
+    background: url(img/asessssss.png) no-repeat center/cover;
 }
 
 .ser-4{
-    background: url(img/dron.webp) no-repeat center/cover;
+    background: url(img/dron.png) no-repeat center/cover;
 }
 
 .servicios-header{
@@ -245,11 +257,11 @@ header video{
 }
 
 .parsela{
-    background: url(img/evento.webp) no-repeat center/cover;
+    background: url(img/evento.jpg) no-repeat center/cover;
     height: auto;
     position: relative;
-    padding: 2rem;
-    margin: 3rem 0;
+    padding: 2em;
+    margin: 3em 0;
 }
 
 .capa-2{
@@ -259,7 +271,7 @@ header video{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.39);
     z-index: 950;
-    padding: 2rem;
+    padding: 2em;
     margin: 0;
 }
 
@@ -274,21 +286,26 @@ header video{
     z-index: 998;
     position: relative;
     text-align: center;
-    padding: 2rem .5rem;
+    padding: 2em .5em;
 }
 
 .parsela-txt h1{
-    margin: 0 0 1rem;
-    font-size: clamp(1.5rem, 1.0524rem + 2.2378vw, 3.5rem);
+    margin: 0 0 1em;
+    font-size: 1.5em;
+}
+
+.parsela-txt p{
+    font-size: 1em;
 }
 
 .parsela-txt button{
-    margin: 1rem 0 0;
-    padding: .5rem;
+    margin: 1em 0 0;
+    padding: .5em;
     border-radius: 10px;
     border: none;
     background-color: rgba(0, 0, 128);
     color: white;
+    font-size: .8em;
 }
 
 
@@ -299,8 +316,13 @@ header video{
 
 .provedores h1{
     color: #269C72;
-    padding: .5rem;
-    font-size: clamp(1.5rem, 1.0524rem + 2.2378vw, 3.5rem); 
+    padding: .5em;
+    font-size: 1.5em; 
+}
+
+.provedores p{
+    font-size: 1.1em;
+    padding: 0 1em 1em;
 }
 
 @keyframes slide {
@@ -337,9 +359,9 @@ header video{
   }
   
   .logos-slide img{
-    height: 70px;
-    padding: 1rem;
-    margin: 0 20px;
+    height: 4.3em;
+    padding: 1em;
+    margin: 0 1.5em;
     border-radius: 10px;
     box-shadow: 0 4px 6px 0 rgb(153, 153, 153);
     background-color: white;
@@ -353,8 +375,8 @@ a{
 
 .clientes{
     height: auto;
-    background: url(img/calera.webp) no-repeat center/cover;
-    padding: 1rem;
+    background: url(img/calera.JPG) no-repeat center/cover;
+    padding: 1em;
     margin: 10% auto;
     width: 100%;
 }
@@ -362,21 +384,22 @@ a{
 .clientes h1{
     color: white;
     text-align: center;
-    font-size: clamp(1.5rem, 1.0524rem + 2.2378vw, 3.5rem);
+    font-size: 1.8em;
+    padding: .8em 1.5em;
 }
 
 .clientes-grid{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    gap: 1rem;
-    margin: 10% auto;
+    gap: 1em;
+    margin: 1% auto;
     position: relative;
-    width: 95%;
+    width: 92%;
 }
 
 .cli-grid{
-    padding: 1rem;
+    padding: 1em;
     background-color: rgba(0, 0, 0, 0.397);
     backdrop-filter: blur(5px);
     color: white;
@@ -385,23 +408,23 @@ a{
 }
 
 .star{
-    margin: .5rem 0;
+    margin: .5em 0;
 }
 
 .star-tit{
-    margin: 1rem 0;
+    margin: 1em 0;
 }
 
 .star-tit h2{
     position: relative;
     bottom: 0;
-
+    font-size: 1.5em;
 }
 
 
 footer{
     /*background:url(img/fondo-nuevo-blancp.webp) no-repeat center/cover;*/
-    padding: 1rem;
+    padding: 1em;
     background-color: black;
 }
 
@@ -418,7 +441,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     border-radius: 15px;
-    margin: auto;
+    margin:2% auto;
     width: 90%;
 }
 
@@ -433,7 +456,7 @@ footer{
 }
 
 .footer-foot ul li{
-    margin: 1rem 0;
+    margin: 1em 0;
 }
 
 @media screen and (min-width:750px) {
@@ -562,7 +585,7 @@ footer{
 }*/
 
 
-@media screen and (min-width:370px) and (max-width:750px){
+@media screen and (min-width:370px) and (max-width:700px){
     .modal-content{
         background-size: cover;
         min-width: 370px;
@@ -584,3 +607,33 @@ footer{
     }
 }
 
+
+@media screen and (min-width:700px){
+
+    body{
+        font-size: 25px;
+    }
+
+    .modal-content{
+        top: 30%;
+    }
+    
+    .header-flex{
+        justify-content: flex-start;
+        padding: 5% 5% 0;
+        align-items: center;
+    }
+
+    .header-center{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo-center{
+        display: none;
+        width: 10%;
+    }
+
+}
