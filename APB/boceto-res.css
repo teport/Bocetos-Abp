@@ -126,7 +126,6 @@ header video{
     position: relative;
     background-image: url(img/fondo-nuevo-azul.webp);
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
@@ -216,7 +215,6 @@ header video{
     width: 80%;
     min-width: 70%;
     background: url(img/fondo-nuevo-blancp.webp) no-repeat center/cover;
-    background-attachment: fixed;
 }
 
 .servicios-header h1{
