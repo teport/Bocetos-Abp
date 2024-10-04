@@ -130,7 +130,6 @@ header video{
     position: relative;
     background-image: url(img/fondo-nuevo-azul.webp);
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
@@ -219,7 +218,6 @@ header video{
     width: 100%;
     min-width: 70%;
     background: url(img/fondo-nuevo-blancp.webp) no-repeat center/cover;
-    background-attachment: fixed;
     padding: 10% auto;
 }
 
@@ -737,6 +735,10 @@ footer{
         display: block;
         width: 5em;
         margin:0 0 .5em 0;
+    }
+
+    .servicios, .intro{
+            background-attachment: fixed;
     }
 
     .intro-txt p{
