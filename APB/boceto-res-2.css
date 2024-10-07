@@ -1,4 +1,4 @@
-*{
+f*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -130,7 +130,6 @@ header video{
     position: relative;
     background-image: url(img/fondo-nuevo-azul.webp);
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
@@ -219,7 +218,6 @@ header video{
     width: 100%;
     min-width: 70%;
     background: url(img/fondo-nuevo-blancp.webp) no-repeat center/cover;
-    background-attachment: fixed;
     padding: 10% auto;
 }
 
@@ -694,6 +692,10 @@ footer{
         height: 50%;
         max-height: 50%;
         object-fit: cover;
+    }
+
+    .servicios, .intro{
+            background-attachment: fixed;
     }
 
     .olas-ser{
