@@ -562,7 +562,7 @@ footer{
     transform: translateY(-50%);
     max-height: 500px;
     border-radius: 15px;
-    background-image: url(img/rafias-modal.webp);
+    background-image: url(img/OFERTA.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1101,12 +1101,18 @@ footer{
 }
 
 @media screen and (min-width:1200px){
-header,.intro, .servicios, .parsela, .provedores, .clientes, footer{
-        height: 26em;
+.intro, .servicios, .parsela, .provedores, .clientes, footer{
+        height: 23em;
         margin: 0 0;
     }
 
     .intro, .servicios{
         background-attachment: fixed;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    header{
+        height: 100vh;
     }
 }
