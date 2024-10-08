@@ -83,13 +83,13 @@
 }
 
 .san{
-    top: 49.2%;
+    top: 50.2%;
     left: 52%;
 }
 
 .ags{
-    top: 51.5%;
-    left: 48.5%;
+    top: 53.9%;
+    left: 48%;
 }
 
 @keyframes pulse {
@@ -105,3 +105,5 @@
         font-size: 13px;
     }
 }
+
+
