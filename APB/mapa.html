@@ -13,7 +13,7 @@
             Zacatecas, Durango, Aguascalientes, San Luis y Jalisco</p>
     </div>
     <div class="world-map">
-        <img src="img/mapa.png" alt="mapa">
+        <img src="img/mapa-nuevo.png" alt="mapa">
         <div class="pin zac">
             <span>Zacatecas</span>
         </div>
@@ -27,5 +27,101 @@
             <span>Aguascalientes</span>
         </div>
     </div>
+
+    <div class="sucur">
+        <div class="sucur-1">
+            <div class="video">
+                <video class="videoplay" preload="none" loop="1" poster="img/ags.webp">
+                    <source src="img/video-comprimido.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="txt">
+                <h1>Fresnillo Agropecuaria</h1>
+                <ul>
+                    <li>Telefono: 493-45-89-987</li>
+                    <li>Direccion: Jerez 450</li>
+                </ul>
+            </div>
+        </div>
+        <div class="sucur-1">
+            <div class="video">
+                <video class="videoplay" preload="none" loop="1" poster="img/calera.JPG">
+                    <source src="img/video-comprimido.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="txt-2">
+                <h1>Loreto</h1>
+                <p>Agropecuaria y Sistema de Riego</p>
+                <button>Contactar</button>
+            </div>
+        </div>
+        <div class="sucur-1">
+            <div class="video">
+                <video class="videoplay" preload="none" loop="1" poster="img/ags.JPG">
+                    <source src="img/video-comprimido.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="txt">
+                <h1>Tlatenango</h1>
+                <ul>
+                    <li>Telefono: 493-45-89-987</li>
+                    <li>Direccion: Jerez 450</li>
+                </ul>
+            </div>
+        </div>
+        <div class="sucur-1">
+            <div class="video">
+                <video class="videoplay" preload="none" loop="1" poster="img/calera.JPG">
+                    <source src="img/video-comprimido.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="txt-2">
+                <h1>Loreto</h1>
+                <p>Agropecuaria y Sistema de Riego</p>
+                <button>Contactar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="ciudades">
+        <div class="ags">
+            <div class="img-txt">
+                <h2>Sucursal Aguascalientes</h2>
+                <ul>
+                    <li>
+                        <h3>Direccion</h3>
+                        <p>Calle tal, Col tal</p>
+                    </li>
+                    <li>
+                        <h3>Telefono</h3>
+                        <p>493-89-97-898</p>
+                    </li>
+                    <li>
+                        <button>Enviar Mensaje</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="img-suc">
+
+            </div>
+            <div class="img-mapa">
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6099.4390533236465!2d-102.2923276!3d21.9678333!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDU4JzA0LjIiTiAxMDLCsDE3JzI0LjUiVw!5e1!3m2!1ses-419!2smx!4v1727210813315!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+        </div>
+    </section>
+
+    
+<script>
+    let myvideo = document.querySelectorAll(".videoplay");
+
+    for (var i = 0; i < myvideo.length; i++) {
+        myvideo[i].addEventListener("mouseover", function(){
+            this.play();
+        })
+        myvideo[i].addEventListener("mouseleave", function(){
+            this.pause();
+        })
+    }
+</script>
 </body>
 </html>
