@@ -83,7 +83,7 @@
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 14em;
-    grid-template-rows: 25em;
+    grid-template-rows: 23em;
     overflow-x: auto;
     overscroll-behavior-x: auto;
     scroll-padding: 5rem;
