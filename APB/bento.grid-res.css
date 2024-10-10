@@ -23,31 +23,31 @@
 }
 
 .card-1{
-    background: url(img/fmc-header.png) no-repeat center/cover;
+    background: url(img/fmc-header.webp) no-repeat center/cover;
 }
 
 .card-2{
-    background: url(img/fmc-present.jpg) no-repeat top center/cover;
+    background: url(img/fmc-present.webp) no-repeat top center/cover;
 }
 
 .card-3{
-    background: url(img/fmc-info.jpg) no-repeat center/cover;
+    background: url(img/fmc-info.webp) no-repeat center/cover;
 }
 
 .card-4{
-    background: url(img/fmc-pasto.jpg) no-repeat center/cover;
+    background: url(img/fmc-pasto.webp) no-repeat center/cover;
 }
 
 .card-5{
-    background: url(img/fmc-txt.png) no-repeat center/cover;
+    background: url(img/fmc-txt.webp) no-repeat center/cover;
 }
 
 .card-6{
-    background: url(img/fmc-rojo.png) no-repeat center/cover;
+    background: url(img/fmc-rojo.webp) no-repeat center/cover;
 }
 
 .card-7{
-    background: url(img/footer-fmc.png) no-repeat center/cover;
+    background: url(img/footer-fmc.webp) no-repeat center/cover;
 }
 
 .card-4:nth-child(4){
@@ -82,7 +82,7 @@
 .productos-grid{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 14rem;
+    grid-auto-columns: 14em;
     grid-template-rows: 25em;
     overflow-x: auto;
     overscroll-behavior-x: auto;
@@ -95,6 +95,7 @@
 
 
  .snaps-inline{
+
     scrollbar-width: none;
 }
     
@@ -111,25 +112,25 @@
 
 .produc-1 .produc-img{
     position: relative;
-    background:url(img/producto-1.png) no-repeat center/cover;
+    background:url(img/producto-1.webp) no-repeat center/cover;
     border-radius: 15px;
 }
 
 .produc-2  .produc-img{
     position: relative;
-    background: url(img/producto-2.png) no-repeat center/cover;
+    background: url(img/producto-2.webp) no-repeat center/cover;
     border-radius: 15px;
 }
 
 .produc-3 .produc-img{
     position: relative;
-    background: url(img/producto-3.png) no-repeat center/cover;
+    background: url(img/producto-3.webp) no-repeat center/cover;
     border-radius: 15px;
 }
 
 .produc-4 .produc-img{
     position: relative;
-    background: url(img/producto-4.png) no-repeat center/cover;
+    background: url(img/producto-4.webp) no-repeat center/cover;
     border-radius: 15px;
 }
 
@@ -152,3 +153,12 @@
     color:white;
 }
 
+@media screen and (min-width:350px){
+    body{
+        font-size: 22px;
+    }    
+
+    .productos-header p{
+        font-size: .8em;
+    }
+}
