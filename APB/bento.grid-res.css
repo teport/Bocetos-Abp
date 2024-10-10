@@ -10,7 +10,7 @@
     width: 90%;
     margin: 5% auto;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 4em 6em  4em 4em 6em 4em;
+    grid-template-rows: 5em 7em  5em 5em 7em 5em;
     gap: .5em;
 }
 
@@ -60,10 +60,14 @@
 }
 
 .productos{
-    width: 90%;
-    margin: 10% auto;
     text-align: center;
 }
+
+.productos-header{
+    width: 90%;
+    margin: 5% auto;
+}
+
 
 .productos img{
     width: 50%;
@@ -77,26 +81,75 @@
 
 .productos-grid{
     display: grid;
-    grid-template-columns: 14rem;
-    grid-template-rows: 18em;
-    justify-content: center;
+    grid-auto-flow: column;
+    grid-auto-columns: 14rem;
+    grid-template-rows: 20em;
+    overflow-x: auto;
+    overscroll-behavior-x: auto;
+    scroll-padding: 5rem;
+    scroll-behavior: smooth;
+    margin: 1em 0;
+    padding: 0 3em;
+    gap: 2em;
 }
- 
+
+
+ .snaps-inline{
+    scroll-snap-type: inline proximity;
+    scrollbar-width: none;
+}
+    
+.snaps-inline > * {
+    scroll-snap-align:start ;
+}
+
 .produc-grid{
-    border: .1rem solid;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
     border-radius: 15px;
     display: grid;
     grid-template-rows: 70% 30%;
 }
 
-.produc-img{
+.produc-1 .produc-img{
     position: relative;
     background:url(img/producto-1.png) no-repeat center/cover;
     border-radius: 15px;
 }
 
+.produc-2  .produc-img{
+    position: relative;
+    background: url(img/producto-2.png) no-repeat center/cover;
+    border-radius: 15px;
+}
+
+.produc-3 .produc-img{
+    position: relative;
+    background: url(img/producto-3.png) no-repeat center/cover;
+    border-radius: 15px;
+}
+
+.produc-4 .produc-img{
+    position: relative;
+    background: url(img/producto-4.png) no-repeat center/cover;
+    border-radius: 15px;
+}
+
 .produc-txt{
-    background-color: rgba(192, 192, 192, 0.568);
+    background-color: rgba(192, 192, 192, 0.384);
     backdrop-filter: blur(15px);
     border-radius: 0 0 15px 15px;
+    text-align: left;
+    padding: .2em 1em;
+    display: grid;
 }
+
+.produc-txt h1{
+    font-size: 1.5em;
+    color: rgb(0, 0, 128);
+}
+
+.produc-txt p{
+    font-size: .8em;
+    line-height: 1.2;
+}
+
