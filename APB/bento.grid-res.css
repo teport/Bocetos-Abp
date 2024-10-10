@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid{
+    display: grid;
+    width: 90%;
+    margin: 5% auto;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 4em 6em  4em 4em 6em 4em;
+    gap: .5em;
+}
+
+.grid-car{
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+
+.card-1:first-child{
+    grid-column: 1/3;
+}
+
+.card-1{
+    background: url(img/fmc-header.png) no-repeat center/cover;
+}
+
+.card-2{
+    background: url(img/fmc-present.jpg) no-repeat top center/cover;
+}
+
+.card-3{
+    background: url(img/fmc-info.jpg) no-repeat center/cover;
+}
+
+.card-4{
+    background: url(img/fmc-pasto.jpg) no-repeat center/cover;
+}
+
+.card-5{
+    background: url(img/fmc-txt.png) no-repeat center/cover;
+}
+
+.card-6{
+    background: url(img/fmc-rojo.png) no-repeat center/cover;
+}
+
+.card-7{
+    background: url(img/footer-fmc.png) no-repeat center/cover;
+}
+
+.card-4:nth-child(4){
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+
+.card-7:nth-child(7){
+    grid-column: 1/3;
+}
+
+.productos{
+    width: 90%;
+    margin: 10% auto;
+    text-align: center;
+}
+
+.productos img{
+    width: 50%;
+}
+
+.productos p{
+    font-size: 1em;
+    line-height: 1.4;
+    margin: 0 0 1em 0;
+}
+
+.productos-grid{
+    display: grid;
+    grid-template-columns: 14rem;
+    grid-template-rows: 18em;
+    justify-content: center;
+}
+ 
+.produc-grid{
+    border: .1rem solid;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+.produc-img{
+    position: relative;
+    background:url(img/producto-1.png) no-repeat center/cover;
+    border-radius: 15px;
+}
+
+.produc-txt{
+    background-color: rgba(192, 192, 192, 0.568);
+    backdrop-filter: blur(15px);
+    border-radius: 0 0 15px 15px;
+}
