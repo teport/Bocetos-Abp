@@ -83,7 +83,7 @@
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 14rem;
-    grid-template-rows: 20em;
+    grid-template-rows: 25em;
     overflow-x: auto;
     overscroll-behavior-x: auto;
     scroll-padding: 5rem;
@@ -135,21 +135,21 @@
 }
 
 .produc-txt{
-    background-color: rgba(192, 192, 192, 0.384);
+    background-color: rgb(206, 5, 5);
     backdrop-filter: blur(15px);
     border-radius: 0 0 15px 15px;
     text-align: left;
-    padding: .2em 1em;
-    display: grid;
+    padding: 1em 1em;
 }
 
 .produc-txt h1{
     font-size: 1.5em;
-    color: rgb(0, 0, 128);
+    color: rgb(255, 255, 255);
 }
 
 .produc-txt p{
     font-size: .8em;
     line-height: 1.2;
+    color:white;
 }
 
