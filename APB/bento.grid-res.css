@@ -87,7 +87,6 @@
     overflow-x: auto;
     overscroll-behavior-x: auto;
     scroll-padding: 5rem;
-    scroll-behavior: smooth;
     margin: 1em 0;
     padding: 0 3em;
     gap: 2em;
