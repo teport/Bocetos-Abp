@@ -197,7 +197,7 @@ header .capa{
 
 .divi-2-1{
     position: relative;
-    background-image: url(img/asesorai.webp);
+    background-image: url(../img/asesorai.webp);
     background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -208,7 +208,7 @@ header .capa{
 
 .divi-2-2{
     position: relative;
-    background-image: url(img/asessssss.webp);
+    background-image: url(../img/asessssss.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -217,7 +217,7 @@ header .capa{
 
 .divi-2-3{
     position: relative;
-    background-image: url(img/sistema-rie.webp);
+    background-image: url(../img/sistema-rie.webp);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
