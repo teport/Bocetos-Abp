@@ -5,6 +5,26 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.contacto ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    color: rgb(0, 0, 128);
+}
+
+.contacto li a{
+    text-decoration: none;
+    color: rgb(0, 0, 128);
+}
+
+.ul-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header{
     width: 100%;
     display: flex;
@@ -12,6 +32,7 @@ header{
     background-color: rgb(0, 0, 128);
     justify-content: space-between;
     padding: .5em;
+    position: sticky;
 }
 
 .header-logo{
@@ -49,9 +70,6 @@ header{
     grid-auto-rows: 8em;
 }
 
-.h-grid{
-    border: .1em solid;
-}
 
 .g-1{
     grid-column: 1/5;
@@ -62,13 +80,12 @@ header{
 .g-2{
     grid-column: 5/10;
     grid-row: 1/5;
-    position: relative;
     background-color: rgba(219, 219, 219, 0.575);
 }
 
 .g-2-txt{ 
     margin: 5em;
-    text-align: right;
+    text-align: left;
 }
 
 .g-2-txt h1{
@@ -83,14 +100,14 @@ header{
 }
 
 .g-2-txt p{
-    margin: 1.5em 0em 1.5em 1.5em;
+    margin: 1.5em 1.5em 1.5em 0em;
     line-height: 1.5;
     font-size: 1.2em;
 }
 
 .g-2-txt .btn-header{
     padding: 1em 3em;
-    margin: 0 0em 0 1em;
+    margin: 0 0em 0 0em;
     border-radius: 5px;
     border: none;
 }
@@ -108,14 +125,36 @@ header{
 .g-3{
     grid-column: 1/3;
     grid-row: 4/6;
+    background-color:rgba(219, 219, 219, 0.575)
 }
 
 .g-4{
     grid-column: 3/5;
+    background-color: rgba(0, 0, 128);
 }
-
 .g-5{
     grid-column: 3/5;
+    background-color: green;
+}
+
+.g-6{
+    background:url(../img/EVENTO\ P.D.png) no-repeat center/contain;
+}
+
+.g-7{
+    background-color: green;
+}
+
+.g-8{
+    background:url(../img/SIEMBRA.png) no-repeat center/contain;
+}
+
+.g-9{
+    background-color: green;
+}
+
+.g-10{
+    background: url(../img/INGRESO\ DE\ PEDIDO.png) no-repeat center/contain;
 }
 
 
