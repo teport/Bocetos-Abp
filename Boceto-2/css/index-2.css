@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}   
+
+header{
+    height: 115vh;
+    position: relative;
+}
+
+header video{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    object-fit: cover;
+    z-index: 2;
+}
+
+header .capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 128, 0.411);
+    z-index: 100;
+}
+
+.header-top{
+    position: relative;
+    z-index: 999;
+    display: flex;
+    padding: 1em 0;
+}
+
+.header-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-img img{
+    position: relative;
+    width: 50%;
+}
+
+.header-txt-top{
+    display: grid;
+    align-items: center;    
+    width: 100%;
+}
+
+.header-txt-top ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}   
+
+.header-txt{
+    position: relative;
+    text-align: center;
+    z-index: 998;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    width: 50em;
+}
+
+.header-txt h1{
+    font-size: 4.5em;
+}
+
+.header-txt small{
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+.header-txt p{
+    margin: 1.5em 0em;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+
+.header-txt .btn-header{
+    padding: 1em 2em;
+    border: none;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.637);
+    color: rgba(0, 0, 128);
+    font-size: 1em;
+    transition: .4s ease-in-out all;
+}
+
+.header-txt .btn-header:hover{
+    background-color: rgba(0, 0, 128);
+    color: white;
+}
+
+
+.header-grid{
+    position: relative;
+    z-index: 998;
+}
+
+.prin-grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 20em);
+    grid-template-rows: 18em;
+    gap: 3em;
+    justify-content: center;
+    margin-top: -5em;
+    margin-bottom: 5em;
+    z-index: 999;
+}
+
+.prin-grid .p-header{
+    border-radius: 5px;
+}
+
+.grid-p-1{
+    background: url(../img/asessssss.webp) no-repeat center/cover;
+}
+
+.grid-p-2{
+    background: url(../img/todo-parsela.webp) no-repeat center/cover;
+}
+
+.grid-p-3{
+    background: url(../img/asesorai.webp) no-repeat center/cover;
+}
