@@ -159,15 +159,15 @@ header .capa{
 }
 
 .grid-p-1{
-    background: url(img/parsela.webp) no-repeat center/cover;
+    background: url(../img/parsela.webp) no-repeat center/cover;
 }
 
 .grid-p-2{
-    background: url(img/todo-parsela.webp) no-repeat center/cover;
+    background: url(../img/todo-parsela.webp) no-repeat center/cover;
 }
 
 .grid-p-3{
-    background: url(img/inge.webp) no-repeat center/cover;
+    background: url(../img/inge.webp) no-repeat center/cover;
 }
 
 
@@ -232,7 +232,7 @@ header .capa{
 
 .divi-2-1{
     position: relative;
-    background-image: url(img/asesorai.webp);
+    background-image: url(../img/asesorai.webp);
     background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -243,7 +243,7 @@ header .capa{
 
 .divi-2-2{
     position: relative;
-    background-image: url(img/asessssss.webp);
+    background-image: url(./img/asessssss.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -252,7 +252,7 @@ header .capa{
 
 .divi-2-3{
     position: relative;
-    background-image: url(img/sistema-rie.webp);
+    background-image: url(../img/sistema-rie.webp);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -277,7 +277,7 @@ header .capa{
 }
 
 .identidad{
-    background:url(img/fondo-nuevo-azul.webp) no-repeat center/cover;
+    background:url(../img/fondo-nuevo-azul.webp) no-repeat center/cover;
     background-attachment: fixed;
     position: relative;
 }
@@ -338,7 +338,7 @@ header .capa{
 
 .identidad-grid-img{
     margin: 2em 1em;
-    background:url(img/calera.webp) no-repeat center/cover;
+    background:url(../img/calera.webp) no-repeat center/cover;
     border-radius: 10px;
 }
 
@@ -377,7 +377,7 @@ header .capa{
 
 .s-grid-1:first-child{
     grid-column: 1/3;
-    background: url(img/asesorai.webp) no-repeat center/cover;
+    background: url(../img/asesorai.webp) no-repeat center/cover;
 }
 
 
@@ -387,15 +387,15 @@ header .capa{
 }
 
 .s-grid-2{
-    background: url(img/hoja-3.webp) no-repeat center/cover;
+    background: url(../img/hoja-3.webp) no-repeat center/cover;
 }
 
 .s-grid-3{
-    background: url(img/asessssss.webp) no-repeat center/cover;
+    background: url(../img/asessssss.webp) no-repeat center/cover;
 }
 
 .s-grid-4{
-    background: url(img/sistema-rie.webp) no-repeat center/cover;
+    background: url(../img/sistema-rie.webp) no-repeat center/cover;
 }
 
 .serv-grid h2{
